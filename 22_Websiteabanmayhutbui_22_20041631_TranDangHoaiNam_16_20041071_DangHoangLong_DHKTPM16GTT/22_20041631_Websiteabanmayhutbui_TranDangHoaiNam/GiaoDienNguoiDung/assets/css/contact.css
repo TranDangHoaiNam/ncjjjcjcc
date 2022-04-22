@@ -1,0 +1,73 @@
+/* header */
+
+/* BEM: Block Element Modifier */
+
+.header {
+    height: auto;
+    background-image: linear-gradient(to top, #ffba00b8, #ffba00);
+   
+
+}
+
+.header__logo img{
+    justify-content: center;
+}
+
+.header__logo-img {
+
+    padding-left: 50px;
+    
+}
+
+
+
+
+/* kết thức header */
+/* nav */
+.nav{
+    padding-top: 50px;
+ 
+}
+.box-info-contact li p strong {
+    color: #272727;
+}
+.box-info-contact li p {
+    margin-bottom: 0;
+    color: #666;
+    font-weight: 500;
+}
+
+element.style {
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    touch-action: pan-x pan-y;
+}
+.contact-form .input-group input, .contact-form .input-group textarea {
+    border: 1px solid #e7e7e7;
+    box-shadow: none;
+    height: 45px;
+    font-weight: 500;
+   
+    background: #fff;
+    color: #272727;
+    width: 100%;
+    padding: 10px 0px;
+}
+.contact-form .input-group input{
+    padding: 10px;
+}
+.contact-form .input-group textarea{
+    padding: 10px;
+}
+.input-group{
+    padding: 10px 0px;
+}
+
+

@@ -1,0 +1,91 @@
+:root{
+    --bg1: #9b59b6;
+    --bg2: #3498db;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    background-color: #333;
+}
+.container{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(var(--bg1), var(--bg2));
+    
+    
+}
+ .container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 20px auto;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    
+} 
+.container img:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0;
+    border-radius: 10px;
+    
+    
+}
+/* .container img{
+    width: 350px;
+    height: 450px;
+    border: 5px solid white;
+    margin: 0;
+    border-radius: 10px;
+    
+    
+} */
+.container h2{
+    color: whitesmoke;
+}
+.container p{
+    color: white;
+    margin: 0 30px 12px;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 12px;
+}
+.btn-container button{
+    height: 35px;
+    width: 150px;
+    border: none;
+    margin-right: 12px;
+    border-radius: 5px;
+    columns: #333;
+    cursor: pointer;
+}
+
+.icon-social{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.icon-social i{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin: 5px 0 0 12px
+}
