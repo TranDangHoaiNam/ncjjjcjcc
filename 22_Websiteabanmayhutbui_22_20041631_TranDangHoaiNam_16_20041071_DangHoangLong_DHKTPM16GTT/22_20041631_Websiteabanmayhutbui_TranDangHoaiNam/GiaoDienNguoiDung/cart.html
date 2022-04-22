@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+
+
+    <link rel="stylesheet" href="../GiaoDienNguoiDung/assets/css/bootstrap.min.css">
+    <script src="../GiaoDienNguoiDung/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../GiaoDienNguoiDung/assets/js/bootstrap.min.js"></script>
+    <script src="../GiaoDienNguoiDung/assets/js/index.js"></script>
+    <link rel="stylesheet" href="../Filetest/slides.css">
+    <link rel="stylesheet" href="../GiaoDienNguoiDung/assets/css/cart.css">
+    
+  
+</head>
+<body>
+    <header class="header">
+        <div class="grid wide">
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link navbar__item-link--separate">Nhà Phát Triển</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="../GiaoDienNguoiDung/index.html" class="navbar__item-link">
+                         Trang chủ
+                         
+                      </a>
+                  </li>
+                    
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">
+                            Kết nối
+                            <i class="navbar__item-icon fa-brands fa-facebook"></i>
+                            <i class="navbar__item-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">
+                            <i class="navbar__item-icon fa-solid fa-bell"></i>
+                            Thông báo
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="../GiaoDienNguoiDung/contact.html" class="navbar__item-link">
+                            <i class="navbar__item-icon fa-solid fa-circle-question"></i>
+                            Liên hệ
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">
+                            <i class="fa-solid fa-globe"></i>
+                            Tiếng Việt
+                            <i class="fa-solid fa-sort-down"></i>
+                            
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="navbar__item">
+                        <a  href="../GiaoDienNguoiDung/singup.html"  id="btn2" class="navbar__item-link navbar__item-link--separate" >Đăng ký</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="../GiaoDienNguoiDung/singin.html"  id="btn2" class="navbar__item-link">Đăng nhập</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="header-with-search">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="./assets/img/logo1.webp" alt="">
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-box__input" placeholder="Type to search">
+                    <div class="search-box__search-btn">
+                        <i class="search-box__search-icon fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="header-cart">
+                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!-- score-top-->
+
+<button onclick="topFunction()" id="myBtn-scroll" title="Go to top"><i class="fas fa-chevron-down"></i></button>
+    <!-- cart -->
+	<section class="cart">
+		<div class="container">
+			<article class="row cart__head pc">
+				
+				<div class="col-6 cart__head-name">
+					Thông tin sản phẩm
+				</div>
+				<div class="col-3 cart__head-quantity">
+					Số lượng
+				</div>
+				<div class="col-3 cart__head-price">
+					Đơn giá
+				</div>
+			</article>
+
+		
+			
+
+			<article class="row cart__body">
+				<div class="col-6 cart__body-name">
+					<div class="cart__body-name-img">
+						<img src="../GiaoDienNguoiDung/assets/img/4532.jpg">
+					</div>
+					<a href="" class="cart__body-name-title">
+						Máy hút bụi Lock&Lock ENV336BLK 400W
+					</a>
+				</div>
+				<div class="col-3 cart__body-quantity">
+                    <input type="button" value="-"  class="cart__body-quantity-minus">
+                    <input type="number" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
+                    <input type="button" value="+" class="cart__body-quantity-plus">
+				</div>
+				<div class="col-3 cart__body-price">
+					<span>1.400.000đ</span>
+
+					<a href="#">Xóa</a>
+				</div>
+			</article>
+
+			<article class="row cart__foot">
+				<div class="col-6 col-lg-6 col-sm-6 cart__foot-update">
+					<button class="cart__foot-update-btn">Cập nhật giỏ hàng</button>
+				</div>
+
+				<p class="col-3 col-lg-3 col-sm-3 cart__foot-total">
+					Tổng cộng: 
+				</p>
+
+				<span class="col-3 col-lg-3 col-sm-3 cart__foot-price">
+					369.000đ <br>
+
+					<button class="cart__foot-price-btn">Mua hàng</button>
+				</span>
+			</article>
+		</div>
+	</section>
+    <!--end cart -->
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="container">
+          <div class="">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="footer-col footer-block">
+                  <h4 class="footer-title">
+                    Giới thiệu
+                  </h4>
+                  <div class="footer-content">
+                    <p>Chợ tốt trang mua sắm trực tuyến của thương hiệu máy hút bụi giúp bạn tiếp
+                      cận các mặt hàng giá rẻ và chết lượng nhất.</p>
+                    <div class="logo-footer">
+                      <img src="../GiaoDienNguoiDung/assets/img/logo-bct.png" width="150px" alt="Bộ Công Thương">
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="footer-col footer-link">
+                  <h4 class="footer-title">
+                    PHÁP LÝ &amp; CÂU HỎI
+                  </h4>
+                  <div class="footer-content toggle-footer">
+                    <ul>
+                      <li class="item">
+                        <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" title="Giới thiệu">Giới thiệu</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="footer-col footer-block">
+                  <h4 class="footer-title">
+                    Thông tin liên hệ
+                  </h4>
+                  <div class="footer-content toggle-footer">
+                    <ul>
+                      <li><span>Địa chỉ:</span> 2491, Nguyễn Ái Quốc, Thành Phố Biên Hoà, Tỉnh Đồng Nai, Hoà An, Thành phố Biên Hòa, Đồng Nai, Việt Nam.</li>
+                      <li><span>Điện thoại:</span> +84 363767820</li>
+                      <li><span>Fax:</span> </li>
+                      <li><span>Mail:</span> namwe210@gmail.com</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="footer-col footer-block">
+                  <h4 class="footer-title">
+                    FANPAGE
+                  </h4>
+                  <div class="footer-content">
+                    <div id="fb-root">
+                      <div class="footer-static-content">
+                        <div class="fb-page" data-href=""
+                          data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                          data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                          <blockquote cite=""
+                            class="fb-xfbml-parse-ignore"><a
+                              href="">Chợ tốt Việt Nam</a>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer--copyright">
+          <div class="container">
+            <hr>
+            <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+              <p>Copyright © 2022 </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- end footer -->
+    
+</body>
+</html>
